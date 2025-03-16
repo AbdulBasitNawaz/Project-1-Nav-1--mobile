@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="sale">
+            <p>Free Nationwide shipping on orders above 2,999-/</p>
+            <img class="sale-cancel-icon" onclick="removeSale()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nO3ZTQqDMBCGYU/RSq9Yj1uwPc1bRBcirWicv4T5Vm6UeVCTGdJ1mUwm00yAJ9AHqKOfaim9eWDO6IlhRkw1TBlKHnADXssDPsBDpdL9Gu6rGt7FNXhikEJ4YpBGeGDQQlhi0EZYYMwQmhhzhAbGDSGJcUdIYMIgrmDCIUowYRFnMOERRzDVIPYw1SH+zBDj5tp9ULvyZup6E+tsPiezEUA0TXxa/PixI4zNp7K3OlWD4cASGx7DiX0iLIaCzS4chgs7dhgMAm2HOwbB3skNg0IDaI5BsYs1w2DQiqONsZwn0MJ4DEVIYzwnO6QwEcZTJDDNHL01cxiayWQyXcR8AfkY5euVO0c7AAAAAElFTkSuQmCC" alt="delete-sign--v1">
+        </div>
+        <nav>
+            <div class="navbar-centerer">
+                <div class="navbar">
+                    <div class="nav-logo">
+                        <img class="logo" src="https://img.freepik.com/free-vector/check-mark-business-logo-template_1043-168.jpg?t=st=1742068984~exp=1742072584~hmac=04419483987419ae3d84f70e025bdd1612b5d0fc4b16b8e8ab6870c17cd3e377&w=826" alt="">
+                        <img class="menu-logo" onclick="openMenu()" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="menu--v1">
+                        <img class="nav-icon-search-mobile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2Wz0pCQRjFf2i6ydop9ArZO1T7FhrlK0TSH+spxNcw61GCaJMFJZn71rqolfHBufBtwjtzLxLkgYELM+ecud98cxhY4Q+hDLSAW+ANmGnY90BztiZXHAIfwHzBGAPNPAwLQM8JPwEXwDawrlEHLoGhW9cVNxo9CX0BJwvEbO5UaxPz6PLOJbQbwNtz5o1Q07I7U/vTULTFfQdKIcSWO9OYsyoCz9I4CiHeiXROPDrSuAkhjUSy7o1FXRp2z1NjKlIlg/GGNKbLNt6MMR7lUOod19mpMRDJEikW19Lox1ynYYbr9CKN49AAGYtoMRiKM3EnwFooueki02IwLfaBb3EPiETXmbdVwt9Q1J8mpp9ANda44MznisGOwqGiYd175c40MU3W18iAhq7FoofAROWtuqzObF5S4Fv2vioYZtpQX93rG6mWp3koqu5lYpvd4r+Y11zZH5ZpnJg/AvfLNl4Bww/dcoIlpDH7/gAAAABJRU5ErkJggg==" alt="search--v1">
+                    </div>
+                    <div class="nav-list">
+                        <ul class="ul-links">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">NEW ARRIVALS</a></li>
+                            <li><a href="#">BEDDINGS</a></li>
+                            <li><a href="#">CURTAINS</a></li>
+                            <li><a href="#">CUSHIONS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                        <img class="logo-ul" src="https://img.freepik.com/free-vector/check-mark-business-logo-template_1043-168.jpg?t=st=1742068984~exp=1742072584~hmac=04419483987419ae3d84f70e025bdd1612b5d0fc4b16b8e8ab6870c17cd3e377&w=826" alt="">
+                    </div>
+                    <div class="nav-icon">
+                        <img class="nav-icon-search" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2Wz0pCQRjFf2i6ydop9ArZO1T7FhrlK0TSH+spxNcw61GCaJMFJZn71rqolfHBufBtwjtzLxLkgYELM+ecud98cxhY4Q+hDLSAW+ANmGnY90BztiZXHAIfwHzBGAPNPAwLQM8JPwEXwDawrlEHLoGhW9cVNxo9CX0BJwvEbO5UaxPz6PLOJbQbwNtz5o1Q07I7U/vTULTFfQdKIcSWO9OYsyoCz9I4CiHeiXROPDrSuAkhjUSy7o1FXRp2z1NjKlIlg/GGNKbLNt6MMR7lUOod19mpMRDJEikW19Lox1ynYYbr9CKN49AAGYtoMRiKM3EnwFooueki02IwLfaBb3EPiETXmbdVwt9Q1J8mpp9ANda44MznisGOwqGiYd175c40MU3W18iAhq7FoofAROWtuqzObF5S4Fv2vioYZtpQX93rG6mWp3koqu5lYpvd4r+Y11zZH5ZpnJg/AvfLNl4Bww/dcoIlpDH7/gAAAABJRU5ErkJggg==" alt="search--v1">
+                        <img class="nav-icon-wish-list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVR4nO2Vzy4DURTGf9NFIwQ7O6nnsFIL6UbCxp8lEi0SL8BWWPmbCp7Bgu4aPADpO5SFathgg5BUbnImOWFmOqZzh0i/ZJJ2vnPO77tz77TQVlt/VClgGigBNeADuAfOgRmgw6PH3JsFLoAH6TG9p8CkzAylAaACNAKuOjCmesblXlDPFZAJA69LQxWYB/qBtHhLwI0augasq+/XwKLUpqW3IPeNfxcUIqVWXga6ferMo14F3hXYfF7x2RqjHuBMai/9tmNKrdwPrjUMPAGPQDZEfa96ehNeBSUx84TXkFxhtSCMEy+zJqbZN1vKCOPWy3wTs9NigC5hvHqZVTEHLQbIqnP2TdtiHlsMUBbGnpfZBzxLwZwFeF5mvwSds4IqysUIz8m+m9nLzYo3Yw6Rk1lm5lbYpg1pMG/GaAvwkSjwuEJouDngzk8HOMBOxBAafhAF3kqI2OBRQmj4YRxwV2bQbpMQ1uBhQmj4kQ14UIjE4K4MoKh+rFx4MQm4K0f+UBpJrvyrDHBfrsThrpzfhPMv9AmOeJf9ULW3GwAAAABJRU5ErkJggg==" alt="like--v1">
+                        <img class="nav-icon-cart" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVR4nO2WMU4CQRiFX6U2WlBIYo0eADmAeACVBEu8gFxALwAXgAvABaChhMRCGrU2SEWHndJQQf7kbbIxO8z88k+3XzLNzMubN7sz/wyQo+cAQBPAFMCK7RXAI8eicgbgA8DG0d6picIhJ5CJFgDqAI7ZagA+OfYW60s0U5MXMsYLHNvwd5gzpbms3MU9NbInzPmluXxyFyfU/Ow72WjHRvtvE88gjiJMnjTZyF5OKV7+6U9MfGTpluwTby/nFM8MA3yxrxQS4DJ1nq0CJPWjHBKgSvHYMMCEfVchAW4pHsCOIT1vQsQPFPcMA/Tp2dCU3I5hgK6mRD9T3DIM0KbnU4i4pREHolpUN8KNpvqtfc2GCUS1sYcUy3G04k5ztCcUS0Gy4tpR3DJJ3nxSkq2opN6MXuYUy6VkxQU95VLy8k1x0TBA0XHFZ7KO+CARby8vEQOId04O0mwBmKjJw0AtZUsAAAAASUVORK5CYII=" alt="shopping-bag">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <div class="mobile-nav-left">
+            <div class="mobile-nav-left-head">
+                <img class="mobile-nav-header-cross" onclick="closeMenu()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO3cX2+LUQCA8SfhG5BsEmvdmEpkiivuMFeMcYUZ7vhifB4S/xLMBSbxLyEmM6XSpJKmSe2cetv37Jznl/Ry63n77Kzb23MOSJIkSZIkSZIkSZIkSZJysBs4Qrpm+48i7ALuAxvAadIzAzwGngH7KCRGt//oRTlDejG6/cfTnGfKcIzUoswOxcg6yqgYg1HO1ji+3gv+5B/jewjspZAYg1EWaxjffuB5wPgeAHvIQO+vqa8BF9ytYabMAS8Cx/YLuEImTgFfAi/8O3AusRi/gTtk5mRElE3gwgTH0oicGbfJ1Angc81RGsDLiBi3yFwvyqfAF+QHsFThcxtjhOORUS5WEKMJrAU+Z6eEmVFnlGZkjJsU6hjwMSLKpTGewxgJRTkAvHJmxGtHRlkO+J4HgdcRMVbHGHfW2hFRtoDL28R4Y4xqonz4zyixMW5UMO6sHY2I0ntBrw187bwxJmNhjCi9GG+dGZON8j7i11dowJ/A1QmOO2stYD3whQ6dTSt1X9RO16ooijESitIBrlc5IMGhiDdtYyQapePMMEhRs2PdN/N83tRX6r6IXLT8szcdh4F3Ff9j6M3EMS1462Rn3/Gd9+Zi/TG2hpZ3evs9gw+oVqu+iFy0K/xc3c/Tp7zyZDnge7riJMFlQE2XAaW3erHpEtJ0YowTpYgV7ymsgG+4DaGaPSJLFcQwSsK7qBrunorfZ7gJnCed/YV3yUzsps/FKYxpLnA7dHZR3Bad4MEB9wJ+CjdqOs2huIMDQqLUfd7JbElHa2wXpe4YRR4+MypKamdmzZR0PNNwlG+JxRiM8qiUA8z+8og/SZIkSZIkSZIkSZIkSRLT8Ac3Q8DXdsnrRgAAAABJRU5ErkJggg==" alt="multiply">
+            </div>
+            <div class="mobile-nav-left-middle">
+                <ul class="mobile-nav-ul">
+                    <div class="mobile-nav-ul-links mobile-nav-home"><li><a href="#">HOME</a></li></div>
+                    <div class="mobile-nav-ul-links"><li><a href="#">NEW ARRIVALS</a></li></div>
+                    <div class="mobile-nav-ul-links"><li><a href="#">BEDDINGS</a></li></div>
+                    <div class="mobile-nav-ul-links"><li><a href="#">CURTAINS</a></li></div>
+                    <div class="mobile-nav-ul-links"><li><a href="#">CUSHIONS</a></li></div>
+                    <div class="mobile-nav-ul-links"><li><a href="#">CONTACT</a></li></div>
+                </ul>
+                <div class="mobile-nav-left-middle-icons">
+                    <div class="mobile-nav-instagram">
+                        <img class="mobile-nav-instagram-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVR4nO2WwU7CQBCGv7t4A05y5ih6EDH6Dkp8IJEnUOQhMCQ8iehD6E1NWz3IQTEb/yakobutmRoP/Mkkzc7MfpnJdLKw0T9QExgC98A7sCxoLnau3EZZ6DmQlIDlWQz0y0C/DKCpfRaBN40qzVoUavvQCHQEHGfOBj7wgxHYQU8yZ3MfONTmD+AK6AJbMvc9AhaB3MQH9iU+Arue3I5ifHfkyldpCm0BU1XgbAa05dsLVJ6rvATX3hT6ssb/Kp/TjSX4QP6pJ+ZWMYeW4FqB4XNbymn7r8FRFeCu/DNPzEQxPUvwtfxtDVLW/wzsKGZs/Tt1FNPSIMWyyQp03/p3Wmo5pPB1ctCnwB2/XpkLrceeBq6m73GBlRnnY39eG8uK7M4HvqwQfOEDN9QSa2gE1Amor+eKFdTddRqCrsIjo0rPikJT1fVccUPxVgKWKGdQpL0bUbW+AcdI0V4wAXsCAAAAAElFTkSuQmCC" alt="instagram-new">
+                    </div>
+                    <div class="mobile-nav-facebook">
+                        <img class="mobile-nav-facebook-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVR4nO2Wu0rEQBhGT6OCnY2K91oLC7HTB7DwxmKtFlYa9XVcUXvRzltpYal9XPAFvIGbRZd1oxKYhTEkf/5NsrDFfjDNMGdO5pKZgU7aMGOAA9wALlAxxTV1O8BonsJh4ACoA78JxQdOgYms0hXAUwjDpQwspZXumRE0K7VHv5tmpH4Tkg/gK0auHvmIcnqfgU2gz2J7gLuIaR/SiI8U0k9gKoa/jWh/qPllNLu3GOK6gGlgBniIaF83MxkbR7mmaxbTC5QUzLYkvlaK5yxmQclcSuJHZSezFrOuZFxJ7KUQbygZTxJXBHAeXeLWuyxBTxnF3cB3DF+SwKuM4kmBv5DA/YTNcW9KIGhk0aqXNqcjiceBWgs2V01zV5+0QFxEkeDYfM9R/JZ0XNopAD85iIM+lrXSRraEO1kj9k0fqVIAXlOIX4BVMmYQOAaqCnHV3OcDWaXhDwjeUOehR0DwTDozb7T+f0Qn7ZA/M7pkIR8cDCkAAAAASUVORK5CYII=" alt="facebook-new">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-right" onclick="closeMenu()"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

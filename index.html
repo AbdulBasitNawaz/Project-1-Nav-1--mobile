@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faislabad Bedsheets</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Exclusive Discounts on Bed Sheets - Shop Now!</p>
+        </div>
+        <div class="navbar">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Bedding</a></li>
+                    <li><a href="#">Curtains</a></li>
+                    <li><a href="#">Cushions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">🛒 Cart (0)</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Luxury Bed Sheets Collection</h1>
+            <p>Enhance your home with our premium-quality bedding.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    
+    <section class="featured-products">
+        <h2>Trending Bed Sheets</h2>
+        <label for="sort">Sort by Price:</label>
+        <select id="sort" onchange="sortProducts()">
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+        <div id="product-container" class="product-grid">
+            <div class="product" data-price="49.99">
+                <img src="bedsheet1.jpg" alt="Classic Cotton Bed Sheet">
+                <h3>Classic Cotton Bed Sheet</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product" data-price="29.99">
+                <img src="bedsheet2.jpg" alt="Elegant Printed Bed Sheet">
+                <h3>Elegant Printed Bed Sheet</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product" data-price="69.99">
+                <img src="bedsheet3.jpg" alt="Luxury Embroidered Bed Sheet">
+                <h3>Luxury Embroidered Bed Sheet</h3>
+                <p>$69.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="newsletter">
+        <h2>Subscribe & Save</h2>
+        <p>Sign up to receive special offers and updates on new collections.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Faislabad Bedsheets. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Customer Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

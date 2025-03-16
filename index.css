@@ -1,0 +1,223 @@
+/*Tinos*/ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*Poppins*/ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    transition: margin 0.5s ease-in-out, height 0.5s ease-in-out; /*For sale transition*/
+    cursor: pointer;
+}
+
+.sale p {
+    flex: 1; 
+    text-align: center;
+}
+
+.sale-cancel-icon{
+    width: 18px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    margin-top: -10px; /* Adjust based on div height */
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 500px){
+    .sale p{
+        font-size: 9px;
+    }
+}
+
+/* .navbar,
+.nav-list,
+.nav-icon,
+.nav-logo{
+    border: 1px solid black;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+}
+
+.nav-logo{
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-list{
+    width: 1061px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-icon{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    padding: 0px 12px 0px 12px;
+
+}
+
+.nav-list ul li a:hover{
+    color: rgb(249,170,171);
+}
+
+.nav-icon-search,
+.nav-icon-wish-list,
+.nav-icon-cart{
+    height: 26px;
+    padding: 0px 4px 0px 4px;
+    cursor: pointer;
+}
+.nav-icon-search-mobile{
+    height: 26px;
+    padding: 0px 4px 0px 4px;
+    cursor: pointer; 
+    display: none;
+}
+
+.menu-logo{
+    width: 33px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.logo-ul{
+    width: 89px;
+    height: 60px;
+    display: none;
+}
+
+.logo{
+    width: 89px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+/* .mobile-nav-instagram-icon,
+.mobile-nav-facebook-icon,
+.mobile-nav-left-middle-icons,
+.mobile-nav-ul-links,
+.mobile-nav-left-head,
+.mobile-nav-left,
+.mobile-nav{
+    border: 1px solid black;
+    background-color: transparent;
+} */
+
+.mobile-nav{
+    backdrop-filter: blur(3px); /* Blur effect */
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+
+.mobile-nav-left{
+    height: 100vh;
+    width: 67.8%;
+    background-color: white;
+}
+
+.mobile-nav-right{
+    width: 32.2%;
+    height: 100vh;
+    background-color: transparent;
+
+}
+
+.mobile-nav-left-head{
+    display: flex;
+    height: 70px;
+}
+
+.mobile-nav-home{
+    border-top: 1px solid lightgray;
+}
+
+.mobile-nav-header-cross{
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.mobile-nav-instagram-icon,
+.mobile-nav-facebook-icon{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 0 10px;
+    cursor: pointer;
+}
+
+.mobile-nav-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-ul-links{
+    padding: 23px 0px 23px 0px;
+    width: 90%;
+    border-bottom: 1px solid lightgray;  /* Light border on bottom */
+}
+
+.mobile-nav-ul-links li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 18px
+}
+
+.mobile-nav-ul-links li{
+    list-style: none;
+}
+
+.mobile-nav-left-middle-icons{
+    display: flex;
+    align-items: center;
+    height: 100;
+}
